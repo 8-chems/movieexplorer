@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//import Greeting from './Greeting.js';
+//import Home from './Home.js';
+import Results from './Results.js';
+import ResultsPlus from './ResultsPlus.js';
+import QueryPage from './QueryPage.js';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   
+
+<Router>   
+{/* <Route path="/home/" render={(props) => <Home/>} /> */}
+{/* <Route path="/greeting/" render={(props) => <Greeting text="Hello, " {...props} />} /> */}
+
+<Route path="/" exact render={(props) => <QueryPage/>} />
+<Route path="/results/" render={(props) => <Results {...props} />} />
+<Route path="/detailedresults/" render={(props) => <ResultsPlus {...props} />} />
+
+</Router>
+
+);
 }
 
 export default App;
