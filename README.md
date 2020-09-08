@@ -1,8 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Application description
+Movie Explorer is a **based-react** application which uses **http://www.omdbapi.com** API to query for results and is styled with bootstrap. The application is not fully implemented yet, and it doesnt benefit from all options offered by the API. 
+
+
+### Search Query Form
+
+![search query form](github/capt1.png)
+
+### Global search result
+![global search result](github/capt2.png)
+
+### Detailed search result
+![detailed search result](github/capt33.png)
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+Runs this command to get the required packages.
 
 ### `npm start`
 
